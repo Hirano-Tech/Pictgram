@@ -5,12 +5,14 @@ ruby '2.5.1'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 5.2.4', '>= 5.2.4.3'
-# Use mysql as the database for Active Record
-gem 'mysql2', '>= 0.4.4', '< 0.6.0'
+gem 'mysql2', '~> 0.5.3'
+  # Use mysql as the database for Active Record
+  # Active Record のデータベースとして MySQL を使用します。
 # Use Puma as the app server
 gem 'puma', '~> 3.11'
-# Use SCSS for stylesheets
-gem 'sass-rails', '~> 5.0'
+gem 'sass-rails', '~> 6.0'
+  # Use SCSS for stylesheets
+  # スタイルシート に .scss を使用する。
 # Use Uglifier as compressor for JavaScript assets
 gem 'uglifier', '>= 1.3.0'
 # See https://github.com/rails/execjs#readme for more supported runtimes
@@ -60,3 +62,11 @@ end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
+
+gem 'sprockets'
+  # Sprockets is a Rack-based asset packaging system that concatenates and serves JavaScript, CoffeeScript, CSS, Sass, and SCSS.
+  # Sprocketsは、JavaScript，CoffeeScript，CSS，Sass，SCSSを連結して提供するラックベースのアセットパッケージングシステムです。
+
+gem 'compass-rails'
+  # Integrate Compass into Rails 3.0 and up.
+  # Compass を Rails 3.0 以降に統合する。
